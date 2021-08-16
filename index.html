@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204989605-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-204989605-1');
+</script>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +46,7 @@
 			<img src="https://alkalwater.github.io/%E9%A2%A8%E8%8A%B1%E9%9B%AA%E6%9C%88.png" width="500" height="500" style="object-fit:cover;">	
 				<h2>風花雪月</h2>
 				<a href="https://www.youtube.com/watch?v=eRF4bQb71Ao" target="_blank">主題曲</a> 
-			</div>
+                        </div>
 			<div class="column" style="background-color:#EFB7E7;">
 			<img src="https://alkalwater.github.io/%E9%BB%91%E9%B7%B2.png" width="283" height="500" style="object-fit:cover;">	
 				<h2>黑鷲學級</h2>
@@ -56,6 +66,56 @@
 			</div>
 		</div>
 	</center>
+<script>
+
+function gtag_event() {
+var flag_1=false;
+var flag_2=false;
+var flag_3=false;
+var flag_4=false;
+var flag_5=false;
+var flag_6=false;
+var flag_7=false;
+var flag_8=false;
+var flag_9=false;
+var flag_10=false;
+
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > jQuery(document).height()*0.1 && !flag_1) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘10%’,'non_interaction': true});
+flag_1=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.2 && !flag_2) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘20%’,'non_interaction': true});
+flag_2=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.3 && !flag_3) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘30%’,'non_interaction': true});
+flag_3=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.4 && !flag_4) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘40%’,'non_interaction': true});
+flag_4=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.5 && !flag_5) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘50%’,'non_interaction': true});
+flag_5=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.6 && !flag_6) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘60%’,'non_interaction': true});
+flag_6=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.7 && !flag_7) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘70%’,'non_interaction': true});
+flag_7=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.8 && !flag_8) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘80%’,'non_interaction': true});
+flag_8=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*0.9 && !flag_9) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘90%’,'non_interaction': true});
+flag_9=true;
+} else if (jQuery(this).scrollTop() > jQuery(document).height()*1 && !flag_10) {
+gtag(‘event’, ‘Usability’, {‘event_category’: ‘Scroll’,’event_label’: ‘100%’,'non_interaction': true});
+flag_10=true;
+
+}});}jQuery(document).ready(function(){gtag_event();});
+
+</script>
+
 </body>
 
 </html> 
